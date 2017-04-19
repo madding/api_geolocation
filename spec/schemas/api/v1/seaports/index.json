@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "seaports": {
+            "id": "/properties/seaports",
+            "items": {
+                "id": "/properties/seaports/items",
+                "properties": {
+                    "cargos": {
+                        "id": "/properties/seaports/items/properties/cargos",
+                        "items": {
+                            "id": "/properties/seaports/items/properties/cargos/items",
+                            "properties": {
+                                "date": {
+                                    "id": "/properties/seaports/items/properties/cargos/items/properties/date",
+                                    "type": "string"
+                                },
+                                "hold_capacity": {
+                                    "id": "/properties/seaports/items/properties/cargos/items/properties/hold_capacity",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "id": "/properties/seaports/items/properties/cargos/items/properties/name",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "id": {
+                        "id": "/properties/seaports/items/properties/id",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "id": "/properties/seaports/items/properties/name",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
