@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "cargo": {
+            "id": "/properties/cargo",
+            "properties": {
+                "date": {
+                    "id": "/properties/cargo/properties/date",
+                    "type": "string"
+                },
+                "hold_capacity": {
+                    "id": "/properties/cargo/properties/hold_capacity",
+                    "type": "string"
+                },
+                "id": {
+                    "id": "/properties/cargo/properties/id",
+                    "type": "integer"
+                },
+                "name": {
+                    "id": "/properties/cargo/properties/name",
+                    "type": "string"
+                },
+                "ship": {
+                    "id": "/properties/cargo/properties/ship",
+                    "properties": {
+                        "hold_capacity": {
+                            "id": "/properties/cargo/properties/ship/properties/hold_capacity",
+                            "type": "string"
+                        },
+                        "name": {
+                            "id": "/properties/cargo/properties/ship/properties/name",
+                            "type": "string"
+                        },
+                        "seaport": {
+                            "id": "/properties/cargo/properties/ship/properties/seaport",
+                            "properties": {
+                                "latitude": {
+                                    "id": "/properties/cargo/properties/ship/properties/seaport/properties/latitude",
+                                    "type": "float"
+                                },
+                                "longitude": {
+                                    "id": "/properties/cargo/properties/ship/properties/seaport/properties/longitude",
+                                    "type": "float"
+                                },
+                                "name": {
+                                    "id": "/properties/cargo/properties/ship/properties/seaport/properties/name",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}

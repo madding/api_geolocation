@@ -7,7 +7,7 @@ module Api
 
       def near_cargo
         @ship = Ship.find(params[:id])
-        @cargos = Cargo.near_for_ship(@ship)
+        @cargo = Cargo.near_for_ship(@ship)
       end
     end
   end

@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "ship": {
+            "id": "/properties/ship",
+            "properties": {
+                "cargo": {
+                    "id": "/properties/ship/properties/cargo",
+                    "properties": {
+                        "date": {
+                            "id": "/properties/ship/properties/cargo/properties/date",
+                            "type": "string"
+                        },
+                        "hold_capacity": {
+                            "id": "/properties/ship/properties/cargo/properties/hold_capacity",
+                            "type": "string"
+                        },
+                        "name": {
+                            "id": "/properties/ship/properties/cargo/properties/name",
+                            "type": "string"
+                        },
+                        "seaport": {
+                            "id": "/properties/ship/properties/cargo/properties/seaport",
+                            "properties": {
+                                "latitude": {
+                                    "id": "/properties/ship/properties/cargo/properties/seaport/properties/latitude",
+                                    "type": "float"
+                                },
+                                "longitude": {
+                                    "id": "/properties/ship/properties/cargo/properties/seaport/properties/longitude",
+                                    "type": "float"
+                                },
+                                "name": {
+                                    "id": "/properties/ship/properties/cargo/properties/seaport/properties/name",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                },
+                "hold_capacity": {
+                    "id": "/properties/ship/properties/hold_capacity",
+                    "type": "string"
+                },
+                "id": {
+                    "id": "/properties/ship/properties/id",
+                    "type": "integer"
+                },
+                "name": {
+                    "id": "/properties/ship/properties/name",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
