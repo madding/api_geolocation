@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Api для поиска корабля или порта для отправки груза. Для корабля поиск ближайшего порта с грузом нужного размера. Для груза поиск ближайшего порта в котором будет корабль с нужным размером трюма и в нужное время для отправки груза.
